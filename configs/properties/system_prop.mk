@@ -87,3 +87,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.zram.mark_idle_delay_mins=60 \
     ro.zram.first_wb_delay_mins=1440 \
     ro.zram.periodic_wb_delay_hours=24
+
+# SOC information
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.soc.manufacturer=MediaTek \
+    ro.soc.model=MT6781
