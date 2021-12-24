@@ -23,6 +23,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
     pm.dexopt.first-boot=quicken \
     pm.dexopt.bg-dexopt=everything
 
+# Camera
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera \
+    vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.realme.lockstate=0
