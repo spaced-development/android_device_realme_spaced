@@ -18,6 +18,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.renderengine.backend=skiaglthreaded
 
+# Dexopt
+PRODUCT_SYSTEM_PROPERTIES += \
+    pm.dexopt.first-boot=quicken \
+    pm.dexopt.bg-dexopt=everything
+
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.realme.lockstate=0
