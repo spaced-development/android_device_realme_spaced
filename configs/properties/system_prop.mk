@@ -6,6 +6,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1
 
+# CABC
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.cabc_profile=2
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.renderengine.backend=skiaglthreaded
