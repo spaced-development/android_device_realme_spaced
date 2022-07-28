@@ -357,4 +357,8 @@
 
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">com.mediatek.ims</string>
+
+    <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
+         screenshot chord -->
+    <integer name="config_screenshotChordKeyTimeout">0</integer>
 </resources>
