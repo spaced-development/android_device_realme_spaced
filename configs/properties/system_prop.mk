@@ -2,6 +2,10 @@
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.apex.updatable=false
 
+# Enable system-side generic bluetooth audio HAL
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.bluetooth.system_audio_hal.enabled=1
+
 # Blurs
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1

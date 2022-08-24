@@ -35,6 +35,18 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/audio_policy_configuration.xml
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
+# Bluetooth Audio (System-side HAL, sysbta)
+PRODUCT_PACKAGES += \
+    audio.sysbta.default \
+    android.hardware.bluetooth.audio-service-system
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
+    $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUTY_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
+
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
