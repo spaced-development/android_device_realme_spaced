@@ -43,6 +43,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.mTEE=S \
     persist.log.tag.mtkpower@impl=S
 
+# Gralloc4
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.log.tag.gralloc4=S
+
 # Iorap
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native_boot.iorap_readahead_enable=true
