@@ -29,6 +29,9 @@ on boot
     # ZRAM
     swapon_all /vendor/fstab.enableswap
 
+    # start MTK's hybrid scheduler
+    write /sys/devices/system/cpu/eas/enable 2
+
     # Touchpanel
     write /proc/touchpanel/oplus_tp_limit_enable 0
     write /proc/touchpanel/oplus_tp_direction 1
