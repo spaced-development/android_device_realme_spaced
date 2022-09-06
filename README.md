@@ -1,7 +1,9 @@
-Device tree for the Realme 8i (RMX3151/spaced)
+Device tree for the Realme 8i/narzo 50 (RMX3151/RMX3286/spaced)
 =================================================
 
-The Realme 8i Codename is RMX3151 | Internal codename is spaced
+The device codename for realme 8i is RMX3151.
+The device codename for realme narzo 50 is RMX3286.
+Both devices are essentially unified under internal codename, spaced.
 
 | Basic                   | Spec Sheet                                                                                                                     |
 | -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
