@@ -68,7 +68,6 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.mt6781.rc \
-    fstab.mt6781 \
     perf_profile.sh
 
 # Keylayouts
@@ -96,6 +95,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor_overlay/etc/fstab.mt6781:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6781
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
@@ -116,6 +119,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     ImsServiceBase
+
+# Vendor overlay
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor_overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/)
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
