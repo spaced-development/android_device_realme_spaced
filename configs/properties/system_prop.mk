@@ -60,6 +60,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.log.tag.gralloc4=S
 
+# Hardware Acceleration
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    video.accelerate.hw=1 \
+    debug.sf.hw=1 \
+    debug.performance.tuning=1 \
+    debug.egl.profiler=1 \
+    debug.egl.hw=1 \
+    debug.composition.type=gpu
+
 # Iorap
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native_boot.iorap_readahead_enable=true
