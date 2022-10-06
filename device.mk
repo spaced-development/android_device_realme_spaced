@@ -20,7 +20,7 @@ DEVICE_PATH := device/realme/spaced
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Parts
-$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
