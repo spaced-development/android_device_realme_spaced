@@ -1,24 +1,9 @@
 # APNs
 etc/apns-conf.xml:product/etc/apns-conf.xml
 
-# EngineerMode
--priv-app/EngineerMode/EngineerMode.apk
-lib/libem_support_jni.so
-lib64/libem_support_jni.so
-
 # IMS
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
--framework/mediatek-telephony-common.jar
--priv-app/ImsService/ImsService.apk
 bin/vtservice
 etc/init/init.vtservice.rc
-framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
 lib/libmtk_vt_service.so
 lib/libmtk_vt_wrapper.so
 lib/libmtkaudio_utils.so
