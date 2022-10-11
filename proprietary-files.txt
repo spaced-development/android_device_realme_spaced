@@ -34,10 +34,3 @@ lib/libsink.so|a7f8fa44abac16851dc83c58a13407e65c6a2cb0
 lib/libsource.so|0e01c6c5d76e21629463d1f94d28d1b8f91c4c30
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-
-# Graphics - from RMX3286_11_C.06
-vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:product/vendor_overlay/30/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek|b6fa0dedf2f63d1e50f5971d8ce0d08ac879e262
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:product/vendor_overlay/30/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|9f896ca7b981834be9e1a1116c971394f95ece07
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:product/vendor_overlay/30/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|30bc6b9fd5abe37f1c0b265b7448441776ee8f13
-vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:product/vendor_overlay/30/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|20290857ee049b423dd1a8e493bf85a8653c4fea
-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:product/vendor_overlay/30/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|54b3be407037e4ac1f64c51ba4d0b96aba75d393
