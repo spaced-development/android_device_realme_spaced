@@ -85,7 +85,7 @@
     <CMD name="PERF_RES_SCHED_BOOST" id="0x01410000">
         <Entry path="/sys/devices/system/cpu/sched/sched_boost"></Entry>
         <Compare>more</Compare>
-        <MaxValue>6</MaxValue>
+        <MaxValue>2</MaxValue>
         <MinValue>0</MinValue>
     </CMD>
     <CMD name="PERF_RES_SCHED_MIGRATE_COST" id="0x01414000">
@@ -94,13 +94,6 @@
         <MaxValue>10000000</MaxValue>
         <MinValue>0</MinValue>
         <DefaultValue>200000</DefaultValue>
-    </CMD>
-    <CMD name="PERF_RES_SCHED_CACHE_PART_CTRL" id="0x01420100">
-        <Entry path="/sys/module/cache_ctrl/parameters/enable"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>1</MaxValue>
-        <MinValue>0</MinValue>
-        <DefaultValue>0</DefaultValue>
     </CMD>
     <CMD name="PERF_RES_CPUFREQ_CCI_FREQ" id="0x00410000">
         <Entry path="/proc/cpufreq/cpufreq_cci_mode"></Entry>
@@ -236,12 +229,6 @@
         <MaxValue>1</MaxValue>
         <MinValue>0</MinValue>
     </CMD>
-    <CMD name="PERF_RES_FPS_FBT_RESCUE_SECOND_RESCUE_F" id="0x0203c800">
-        <Entry path="/sys/module/fbt_cpu/parameters/rescue_second_enhance_f"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>100</MaxValue>
-        <MinValue>0</MinValue>
-    </CMD>
     <CMD name="PERF_RES_DISP_IDLE_TIME" id="0x0240C000">
         <Entry path="/proc/displowpower/idletime"></Entry>
         <Compare>more</Compare>
@@ -371,20 +358,6 @@
         <Compare>more</Compare>
         <MaxValue>100</MaxValue>
         <MinValue>0</MinValue>
-    </CMD>
-    <CMD name="PERF_RES_FPS_FBT_RESCUE_PERCENT_90" id="0x0200c200">
-        <Entry path="/sys/module/fbt_cpu/parameters/rescue_percent_90"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>100</MaxValue>
-        <MinValue>0</MinValue>
-        <DefaultValue>33</DefaultValue>
-    </CMD>
-    <CMD name="PERF_RES_FPS_FBT_RESCUE_PERCENT_120" id="0x0200c300">
-        <Entry path="/sys/module/fbt_cpu/parameters/rescue_percent_120"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>100</MaxValue>
-        <MinValue>0</MinValue>
-        <DefaultValue>33</DefaultValue>
     </CMD>
     <CMD name="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" id="0x00c0c200">
         <Entry path="/sys/kernel/ged/hal/timer_base_dvfs_margin"></Entry>
@@ -614,22 +587,8 @@
         <MaxValue>50000000</MaxValue>
         <MinValue>-50000000</MinValue>
     </CMD>
-    <CMD name="PERF_RES_POWER_SYSLIMITER_60" id="0x01c40000">
-        <Entry path="/proc/perfmgr/syslimiter/syslimiter_fps_60"></Entry>
-        <Compare>less</Compare>
-        <MaxValue>3000000</MaxValue>
-        <MinValue>0</MinValue>
-        <DefaultValue>-1</DefaultValue>
-    </CMD>
-    <CMD name="PERF_RES_POWER_SYSLIMITER_90" id="0x01c40100">
-        <Entry path="/proc/perfmgr/syslimiter/syslimiter_fps_90"></Entry>
-        <Compare>less</Compare>
-        <MaxValue>3000000</MaxValue>
-        <MinValue>0</MinValue>
-        <DefaultValue>-1</DefaultValue>
-    </CMD>
-    <CMD name="PERF_RES_POWER_SYSLIMITER_120" id="0x01c40200">
-        <Entry path="/proc/perfmgr/syslimiter/syslimiter_fps_120"></Entry>
+    <CMD name="PERF_RES_POWER_SYSLIMITER" id="0x01c40400">
+        <Entry path="/proc/perfmgr/syslimiter/syslimiter_limit_freq"></Entry>
         <Compare>less</Compare>
         <MaxValue>3000000</MaxValue>
         <MinValue>0</MinValue>
@@ -795,19 +754,10 @@
         <MaxValue>100</MaxValue>
         <MinValue>0</MinValue>
     </CMD>
-    <CMD name="PERF_RES_FPS_FPSGO_SPID" id="0x02060000">
-        <Entry path="/sys/module/xgf/parameters/xgf_cfg_spid"></Entry>
+    <CMD name="PERF_RES_FPS_FPSGO_STOP_BOOST" id="0x02004200">
+        <Entry path="/sys/kernel/fpsgo/common/stop_boost"></Entry>
         <Compare>more</Compare>
-        <MaxValue>1</MaxValue>
+        <MaxValue>65535</MaxValue>
         <MinValue>0</MinValue>
-        <DefaultValue>0</DefaultValue>
-    </CMD>
-    <CMD name="PERF_RES_GPU_SHED_MODE" id="0x0302c000">
-        <Entry path="/sys/devices/platform/13040000.mali/js_ctx_scheduling_mode"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>1</MaxValue>
-        <MinValue>0</MinValue>
-        <DefaultValue>0</DefaultValue>
-        <Valid>1</Valid>
     </CMD>
 </CONTABLE>
