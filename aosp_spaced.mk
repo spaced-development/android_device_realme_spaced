@@ -23,7 +23,12 @@ $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Build configuration
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_spaced
