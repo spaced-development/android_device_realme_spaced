@@ -1,16 +1,16 @@
 # Vendor tree
 VT=vendor/realme/spaced/spaced-vendor.mk
-if ! [ -a $VT ]; then git clone https://github.com/drtsinx92/proprietary_vendor_realme_spaced vendor/realme/spaced
+if ! [ -a $VT ]; then git clone https://github.com/drtsinx98/proprietary_vendor_realme_spaced vendor/realme/spaced
 fi
 
 # Vendor-ims tree
 VT_IMS=vendor/realme/ims-spaced/mtk-ims.mk
-if ! [ -a $VT_IMS ]; then git clone https://github.com/drtsinx92/proprietary_vendor_realme_ims-spaced vendor/realme/ims-spaced
+if ! [ -a $VT_IMS ]; then git clone https://github.com/drtsinx98/proprietary_vendor_realme_ims-spaced vendor/realme/ims-spaced
 fi
 
 # Kernel tree
 KT=kernel/realme/spaced/build.sh
-if ! [ -a $KT ]; then git clone --depth=1 https://github.com/drtsinx92/android_kernel_realme_mt6781 kernel/realme/spaced
+if ! [ -a $KT ]; then git clone --depth=1 https://github.com/drtsinx98/android_kernel_realme_mt6781 kernel/realme/spaced
 fi
 
 # frameworks/av (required for sysbta)
