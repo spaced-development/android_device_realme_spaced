@@ -6,6 +6,7 @@ fi
 # Vendor-ims tree
 VT_IMS=vendor/realme/ims-spaced/mtk-ims.mk
 if ! [ -a $VT_IMS ]; then git clone https://github.com/drtsinx92/proprietary_vendor_realme_ims-spaced vendor/realme/ims-spaced
+fi
 
 # Kernel tree
 KT=kernel/realme/spaced/build.sh
