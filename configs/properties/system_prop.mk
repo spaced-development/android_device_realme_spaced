@@ -133,5 +133,4 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Elixir stuff
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.elixir.maintainer=rk134 - unofficial
     org.elixir.device=realme 8i/narzo 50
